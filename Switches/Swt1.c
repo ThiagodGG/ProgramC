@@ -14,7 +14,7 @@ scanf("%d", &opcao);
 switch (opcao)
 {
 case 1:
-    printf("O seu saldo é: R$ %f\n", saldo);
+    printf("O seu saldo é: R$ %.2f\n", saldo);
     break;
 case 2:
     printf("Digite o banco que você deseja depositar\n");
