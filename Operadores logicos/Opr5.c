@@ -1,33 +1,33 @@
 #include <stdio.h>
 
-int main (){
+int main(){
 
-int nota;
+int idade;
+float renda;
 
-printf("Digite a sua nota: ");
-scanf("&d", &nota);
+printf("Digite sua idade: ");
+scanf("%d", &idade);
+printf("Digite sua renda mensal: ");
+scanf("%f", &renda);
 
-//A >= 90
-//B >= 80
-//C >= 70
-//D >= 60
-//F >= 50
-
-if (nota >= 90){
-    printf("O conceito é A! \n");
-} else if (nota >= 80){
-    printf("O conceito é B! ");
-} else if (nota >= 70){
-    printf("O conceito é C! ");
-} else if (nota >= 60){
-    printf("O conceito é D! ");
-} else if (nota >= 50){
-     printf("O conceito é E! ");
+if(idade <= 18 || idade >= 60){
+    if (renda < 2000){
+        printf("Você tem direito ao desconto! \n");
+    } else {
+        printf("Você não tem direito ao desconto devido a renda! \n");
+    } 
+    printf("Aceito com relação a idade");
 } else {
-    printf("Você é burro!!!! ");
+    printf("Você não atende aos criterios devido a idade");
+}
+
+
+
+
+
 }
    
-}
+
 
 
 
